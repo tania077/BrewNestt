@@ -1,0 +1,65 @@
+/* ===================================================
+   BrewNest — Animations & Transitions
+=================================================== */
+
+/* ---- Scroll Reveal Classes ---- */
+.fade-up,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up    { transform: translateY(32px); }
+.fade-left  { transform: translateX(-32px); }
+.fade-right { transform: translateX(32px); }
+
+.fade-up.visible,
+.fade-left.visible,
+.fade-right.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ---- Stagger Delay for Grid Items ---- */
+.menu-card:nth-child(1) { transition-delay: 0.05s; }
+.menu-card:nth-child(2) { transition-delay: 0.10s; }
+.menu-card:nth-child(3) { transition-delay: 0.15s; }
+.menu-card:nth-child(4) { transition-delay: 0.20s; }
+.menu-card:nth-child(5) { transition-delay: 0.25s; }
+.menu-card:nth-child(6) { transition-delay: 0.30s; }
+
+/* ---- Filter Animation (menu cards) ---- */
+.menu-card {
+  transition: opacity 0.3s ease, transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* ---- Page Load Hero Animation ---- */
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge   { animation: heroIn 0.6s ease 0.1s both; }
+.hero-title   { animation: heroIn 0.6s ease 0.2s both; }
+.hero-desc    { animation: heroIn 0.6s ease 0.3s both; }
+.hero-btns    { animation: heroIn 0.6s ease 0.4s both; }
+.hero-stats   { animation: heroIn 0.6s ease 0.5s both; }
+.hero-visual  { animation: heroIn 0.8s ease 0.35s both; }
+
+/* ---- Navbar scroll state transition ---- */
+.navbar {
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* ---- Button pulse on add to cart ---- */
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(107,63,30,0.4); }
+  70%  { box-shadow: 0 0 0 10px rgba(107,63,30,0); }
+  100% { box-shadow: 0 0 0 0 rgba(107,63,30,0); }
+}
+
+.add-btn:active {
+  animation: pulse 0.5s ease;
+}
