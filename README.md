@@ -1,4 +1,4 @@
-# BrewNestt ☕ — Artisan Tea & Coffee Website
+# BrewNestt — Artisan Tea & Coffee Website
 
 A fully responsive, multi-section **café website** built with pure HTML, CSS, and JavaScript.  
 No frameworks, no libraries — just clean, well-structured frontend code.
@@ -33,7 +33,7 @@ making it perfect for learning and demonstrating fundamental frontend skills.
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 BrewNestt/
