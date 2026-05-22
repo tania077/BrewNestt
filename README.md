@@ -38,16 +38,16 @@ making it perfect for learning and demonstrating fundamental frontend skills.
 ```
 BrewNestt/
 │
-├── index.html          ← Main HTML (all sections)
+├── index.html         
 │
 ├── css/
-│   ├── style.css       ← Layout, components, responsive styles
-│   └── animations.css  ← Scroll reveals, entrance animations
+│   ├── style.css       
+│   └── animations.css  
 │
 ├── js/
-│   └── main.js         ← All JavaScript features (well-commented)
+│   └── main.js        
 │
-└── README.md           ← This file
+└── README.md          
 ```
 
 ---
