@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrewNestt — Artisan Tea & Coffee</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">BrewNestt</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-cta">Order Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container-hero">
+      <div class="hero-content fade-up">
+      <span class="hero-badge">🌿 Est. 2019 · Handcrafted Beverages</span>
+      <h1 class="hero-title">
+        Sip the Warmth<br/>
+        <span class="highlight">of Every Moment</span>
+      </h1>
+      <p class="hero-desc">
+        Artisan teas and coffees brewed with care, sourced from the finest estates —
+        served fresh in every cup, every day.
+      </p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Brews</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Rating</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10K+</span><span class="stat-label">Customers</span></div>
+      </div>
+    </div>
+    <div class="hero-visual fade-right">
+      <div class="cup-card">
+        <div class="cup-emoji">☕</div>
+        <p class="cup-label">Signature Blend</p>
+        <p class="cup-sub">Darjeeling First Flush</p>
+      </div>
+    </div>
+    </div><!-- end container-hero -->
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap fade-left">
+          <div class="about-img-box">
+            <div class="img-emoji-scene">
+              <span class="big-emoji">🫖</span>
+              <div class="about-tags">
+                <span class="tag">Organic</span>
+                <span class="tag">Fresh</span>
+                <span class="tag">Local</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text fade-right">
+          <span class="section-eyebrow">Who We Are</span>
+          <h2 class="section-title">Brewed with Passion, Served with Love</h2>
+          <p>
+            BrewNestt was born out of a simple belief — that a great cup of tea or coffee
+            can transform your day. We partner directly with Darjeeling, Assam, and
+            Nilgiri estates to bring you the freshest leaves and beans.
+          </p>
+          <p>
+            Every brew is crafted by our trained baristas using traditional methods
+            paired with modern precision — because you deserve nothing less.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">🌱</span>
+              <div>
+                <strong>100% Organic</strong>
+                <p>Certified pesticide-free leaves sourced directly from estates.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">⏱</span>
+              <div>
+                <strong>Freshly Brewed</strong>
+                <p>Every order brewed to order — never pre-made.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🤝</span>
+              <div>
+                <strong>Farmer First</strong>
+                <p>Fair trade partnerships that support local farmers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What We Brew</span>
+        <h2 class="section-title">Our Signature Menu</h2>
+        <p class="section-desc">From classic chai to specialty cold brews — something for every mood.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tea">Tea</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="cold">Cold Brews</button>
+        <button class="filter-btn" data-filter="snacks">Snacks</button>
+      </div>
+
+      <!-- Menu Cards -->
+      <div class="menu-grid" id="menuGrid">
+
+        <div class="menu-card" data-category="tea">
+          <div class="card-badge">Bestseller</div>
+          <div class="card-emoji">🍵</div>
+          <h3>Masala Chai</h3>
+          <p>Spiced black tea brewed with fresh ginger, cardamom, and full-cream milk.</p>
+          <div class="card-footer">
+            <span class="price">₹80</span>
+            <button class="add-btn" onclick="addToCart('Masala Chai', 80)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="tea">
+          <div class="card-emoji">🫖</div>
+          <h3>Darjeeling First Flush</h3>
+          <p>Delicate, floral first harvest tea with a golden cup and muscatel character.</p>
+          <div class="card-footer">
+            <span class="price">₹120</span>
+            <button class="add-btn" onclick="addToCart('Darjeeling First Flush', 120)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="card-badge">New</div>
+          <div class="card-emoji">☕</div>
+          <h3>Filter Kaapi</h3>
+          <p>South Indian decoction coffee with frothy milk — a heritage in every sip.</p>
+          <div class="card-footer">
+            <span class="price">₹90</span>
+            <button class="add-btn" onclick="addToCart('Filter Kaapi', 90)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="card-emoji">🧋</div>
+          <h3>Dalgona Coffee</h3>
+          <p>Whipped instant coffee foam over chilled milk — the internet's favourite brew.</p>
+          <div class="card-footer">
+            <span class="price">₹150</span>
+            <button class="add-btn" onclick="addToCart('Dalgona Coffee', 150)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cold">
+          <div class="card-badge">Summer Pick</div>
+          <div class="card-emoji">🧊</div>
+          <h3>Cold Brew Black Tea</h3>
+          <p>Slowly steeped overnight Assam tea served over ice — smooth and refreshing.</p>
+          <div class="card-footer">
+            <span class="price">₹130</span>
+            <button class="add-btn" onclick="addToCart('Cold Brew Black Tea', 130)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cold">
+          <div class="card-emoji">🍋</div>
+          <h3>Lemon Iced Coffee</h3>
+          <p>Cold espresso with fresh lemon juice and a hint of mint — bold and zesty.</p>
+          <div class="card-footer">
+            <span class="price">₹160</span>
+            <button class="add-btn" onclick="addToCart('Lemon Iced Coffee', 160)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks">
+          <div class="card-emoji">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Flaky, golden croissants baked in-house every morning — best with chai.</p>
+          <div class="card-footer">
+            <span class="price">₹60</span>
+            <button class="add-btn" onclick="addToCart('Butter Croissant', 60)">+ Add</button>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks">
+          <div class="card-emoji">🍪</div>
+          <h3>Cardamom Cookies</h3>
+          <p>Homemade elaichi-flavoured shortbread cookies — crisp, aromatic, irresistible.</p>
+          <div class="card-footer">
+            <span class="price">₹50</span>
+            <button class="add-btn" onclick="addToCart('Cardamom Cookies', 50)">+ Add</button>
+          </div>
+        </div>
+
+      </div><!-- end menu-grid -->
+    </div><!-- end container -->
+  </section>
+
+  <!-- ===== CART TOAST ===== -->
+  <div class="cart-toast" id="cartToast">
+    <span id="cartMsg">Item added to cart!</span>
+    <span class="cart-count" id="cartCount">0</span>
+  </div>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Our Vibe</span>
+        <h2 class="section-title">From Our Café</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-tall">
+          <div class="gallery-placeholder">☕<br/><small>Morning Brew Setup</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">🫖<br/><small>Tea Estate Origin</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">🍃<br/><small>Fresh Leaves</small></div>
+        </div>
+        <div class="gallery-item g-wide">
+          <div class="gallery-placeholder">🌄<br/><small>Darjeeling Sunrise</small></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">🥐<br/><small>Freshly Baked</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Reviews</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Masala Chai here is hands-down the best I've had outside my grandma's kitchen. Warm, spiced, and absolutely perfect."</p>
+          <div class="reviewer">
+            <div class="avatar">PR</div>
+            <div>
+              <strong>Priya Rao</strong>
+              <span>Kolkata, WB</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p>"BrewNestt introduced me to Darjeeling First Flush and I haven't been able to drink anything else since. The quality is unreal."</p>
+          <div class="reviewer">
+            <div class="avatar">AS</div>
+            <div>
+              <strong>Arjun Sharma</strong>
+              <span>Siliguri, WB</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Filter Kaapi brought back so many memories of Chennai mornings. Authentic, strong, and served with a smile every time."</p>
+          <div class="reviewer">
+            <div class="avatar">MK</div>
+            <div>
+              <strong>Meena Krishnan</strong>
+              <span>Guwahati, AS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-left">
+          <span class="section-eyebrow">Find Us</span>
+          <h2 class="section-title">Come Visit BrewNestt</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>12, Hill Cart Road, Siliguri, West Bengal – 734001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@brewnnestt.in</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Sat: 7am – 9pm<br/>Sunday: 8am – 8pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap fade-right">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <h3>Send Us a Message</h3>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="rahul@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="I'd love to know more about..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message ✉️</button>
+            <p class="form-success" id="formSuccess">✅ Thank you! We'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">BrewNestt</span>
+          </div>
+          <p>Artisan tea & coffee crafted with love. Every cup tells a story from the hills to your hands.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Brews</h4>
+          <ul>
+            <li><a href="#menu">Teas</a></li>
+            <li><a href="#menu">Coffees</a></li>
+            <li><a href="#menu">Cold Brews</a></li>
+            <li><a href="#menu">Snacks</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-btn">📸 Instagram</a>
+            <a href="#" class="social-btn">🐦 Twitter</a>
+            <a href="#" class="social-btn">👥 Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 BrewNestt. Made with ☕ and passion.</p>
+        <p>Built as a personal project — HTML, CSS & JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
