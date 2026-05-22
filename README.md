@@ -10,7 +10,7 @@ No frameworks, no libraries — just clean, well-structured frontend code.
 
 ---
 
-## 📌 About the Project
+## About the Project
 
 **BrewNestt** is a frontend project for an artisan tea and coffee shop.  
 The goal was to build a visually polished, real-world website using only core web technologies — 
@@ -18,7 +18,7 @@ making it perfect for learning and demonstrating fundamental frontend skills.
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -52,7 +52,7 @@ BrewNestt/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 No build tools or installations needed.
 
@@ -67,7 +67,7 @@ open index.html
 
 ---
 
-## 💡 JavaScript Concepts Used
+## JavaScript Concepts Used
 
 Perfect for beginners to study and explain in interviews:
 
@@ -82,7 +82,7 @@ Perfect for beginners to study and explain in interviews:
 
 ---
 
-## 🎨 CSS Concepts Used
+## CSS Concepts Used
 
 1. **CSS Custom Properties (Variables)** — design tokens for colors, fonts, spacing
 2. **CSS Grid & Flexbox** — responsive layout without any framework
@@ -94,7 +94,7 @@ Perfect for beginners to study and explain in interviews:
 
 ---
 
-## 📱 Sections
+## Sections
 
 - **Navbar** — sticky, responsive, active link highlighting
 - **Hero** — headline, CTA buttons, stats, floating cup card
@@ -107,7 +107,7 @@ Perfect for beginners to study and explain in interviews:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Add a real backend (Node.js / PHP) for the contact form
 - [ ] Integrate a payment gateway for online ordering
@@ -117,14 +117,14 @@ Perfect for beginners to study and explain in interviews:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**[Your Name]**  
-3rd Year B.Tech | [Your College Name]  
+**Tania Chowdhury**  
+3rd Year B.Tech | Netaji Subhash Engineering College 
 [LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
 
 ---
 
-## 📄 License
+## License
 
 This project is open source under the [MIT License](LICENSE).
